@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Removing part of the URL with .htaccess</title>
+    <title>Bulk uploading files to Rackspace Cloud Files</title>
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 
     
-      <meta name="description" content="Learn how to permanently redirect moved directories.">
+      <meta name="description" content="Learn how to mass upload files onto the Rackspace Cloud Files platform">
     
 
     <link rel="author" href="https://plus.google.com/102445625451031943800">
@@ -24,15 +24,32 @@
         <section>
           <article>
 	<header>
-		<h1>Removing part of the URL with .htaccess</h1>
+		<h1>Bulk uploading files to Rackspace Cloud Files</h1>
 		<p><time datetime="2014-04-13">13 Apr 2014</time></p>
 	</header>
-	<p>Recently we changed URLs on a website from /p/<em>category</em>/<em>product</em> to just /<em>category</em>/*product. This meant that we had to 301 redirect the old URLs to prevent Google results from returning a 404 error and to also let Google know that the page has permanently changed URL as to update their search indexes.</p>
+	<p>Recently I needed to upload around 28,000 images onto a cloud files container. This could be achieved by using CyberDuck, but that takes way too long to mass upload. What I ended up using was <a href="https://github.com/cloudnull/turbolift">Turbolift</a>.</p>
 
-<p>By adding the following lines to the .htaccess file in the web root it achieved this.</p>
+<p>Turbolift is built for speed and masses of files. It can scan a local directory for all files and upload them all into a container.</p>
 
-<p><pre class="language-http line-numbers"><code class="language-http">RewriteEngine On
-RewriteRule ^p/(.+)$ /$1 [L,R=301,NC,NE]</code></pre></p>
+<p>Installation (at least on a Mac) was very quick and painless. I simply followed their <a href="https://github.com/cloudnull/turbolift#turbolift-the-cloud-files-uploader">instructions</a> and did the following in a terminal window:</p>
+
+<p><pre class="language-http line-numbers"><code class="language-http">git clone git://github.com/cloudnull/turbolift.git
+cd turbolift
+python setup.py install</code></pre></p>
+
+<p>One this had installed I changed directory to where the images are stored and did the following:</p>
+
+<p><pre class="language-http line-numbers"><code class="language-http">turbolift -u [Rackspace username] -a [Rackspace API Key] --os-rax-auth [Region] upload -s [Path to local files] -c [Container to use]</code></pre></p>
+
+<ul>
+<li>The Rackspace Username is simply what you use to login to <a href="http://mycloud.rackspace.co.uk">Rackspace&#39;s My Cloud Control Panel</a></li>
+<li>The API Key you can get by looging into the control panel and clicking Account Settings and then Show next to the API Key</li>
+<li>The region for me was <em>lon</em> as we are uploading the the London Data Centre</li>
+<li>The path to local files is the absolute path on your machine to where the files are located. On a Mac you can drag the folder into the terminal window to give you this path.</li>
+<li>The container is what container the files should be uploaded to. I had already created the container to use and selected that it uses the CDN.</li>
+</ul>
+
+<p>Once you run the command it will tell you when it is complete. You can then login to the control panel and get the URL for the container if it is CDN enabled. From this you can append the file name to it and get a publically accessible URL for each file.</p>
 
 
     <div id="disqus_thread"></div>
