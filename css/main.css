@@ -6,13 +6,22 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+html, body {
+  height: 100%;
+}
+
+body > div {
+  min-height: 100%;
+}
+
 /* --- Sidebar  --- */
 aside {
   width:185px;
   padding: 15px;
   background: #1A1A1A;
   position: absolute;
-  top:0; bottom:0; left:0; 
+  top:0; bottom:0; left:0;
+  min-height: 500px;
 }
 
 aside .title {
@@ -66,14 +75,38 @@ aside .github {
 }
 
 /* --- Content --- */
+div {
+  position: relative;
+}
+
 main {
-  margin: 15px 15px 15px 235px;
+  margin: 0 15px 0 235px;
+  max-width: 960px;
+}
+
+main section {
+ padding: 15px 0; 
 }
 
 article h1 {
   font-size: 40px;
   font-weight: bold;
   line-height: 50px;
+  margin-bottom: 16px;
+}
+
+article h2 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+article h3 {
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: bold;
+  margin-bottom: 16px;
 }
 
 article h1 a {
@@ -81,8 +114,47 @@ article h1 a {
   text-decoration: none;
 }
 
-article p {
-  font-size: 18px;
-  line-height: 26px;
-  margin-bottom: 20px;
+article h1 a:hover {
+  color: #fc0;
 }
+
+article p {
+  font-size: 19px;
+  line-height: 31px;
+  margin-bottom: 31px;
+}
+
+article header p {
+  margin-bottom: 16px;
+}
+
+article + article {
+  border-top: 2px solid #cccccc;
+  padding-top: 31px;
+}
+
+/* --- Smartphones (portrait and landscape) --- */
+@media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
+  aside {
+    width:100%;
+    position: relative;
+    min-height: 0;
+    padding:20px 0;
+  }
+
+  main {
+    margin:15px;
+    max-width: none;
+  }
+
+  article h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+/* --- Fonts --- */
+@font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 400; src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff'); }
+@font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 700; src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff'); }
+@font-face { font-family: 'Open Sans'; font-style: italic; font-weight: 400; src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/xjAJXh38I15wypJXxuGMBrrIa-7acMAeDBVuclsi6Gc.woff) format('woff'); }
+@font-face { font-family: 'Open Sans'; font-style: italic; font-weight: 700; src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/PRmiXeptR36kaC0GEAetxhbnBKKEOwRKgsHDreGcocg.woff) format('woff'); }

@@ -23,6 +23,9 @@ pre[class*="language-"] {
 	-moz-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
+
+	line-height: 20px;
+	font-size: 16px;
 }
 
 pre p {
