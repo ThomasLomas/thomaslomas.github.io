@@ -1,0 +1,11 @@
+# Site settings
+title: Thomas Lomas' Résumé / Curriculum Vitae / Ramblings
+email: tlomas@gmail.com
+description: This is my personal Résumé / Curriculum Vitae with some ramblings too
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://thomaslomas.me" # the base hostname & protocol for your site
+twitter_username: tomtheplank
+github_username:  thomaslomas
+
+# Build settings
+markdown: kramdown

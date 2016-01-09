@@ -1,0 +1,21 @@
+@import 'settings';
+
+// generate classes :
+@include gridle_generate_classes();
+
+body {
+    margin: 0;
+}
+
+header {
+    @include gridle_grid(12);
+    background: #1A1A1A;
+    color: #FFFFFF;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}

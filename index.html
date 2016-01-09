@@ -1,85 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Thomas' Dev Corner</title>
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+---
+layout: default
+---
 
-    
-      <meta name="description" content="Just a small repository of development information and things I learn.">
-    
-
-    <link rel="author" href="https://plus.google.com/102445625451031943800">
-
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/prism.css">
-
-    <!--[if lt IE 9]>
-      <script src="/javascript/html5shiv.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div>
-      <main>
-        <section>
-          
-  <article>
-  	<header>
-	  	<h1><a href="/2014/04/13/bulk-upload-cloud-files.html">Bulk uploading files to Rackspace Cloud Files</a></h1>
-	  	<p><time datetime="2014-04-13">13 Apr 2014</time></p>
-  	</header>
-  	<p>Recently I needed to upload around 28,000 images onto a cloud files container. This could be achieved by using CyberDuck, but that takes way too long to mass upload. What I ended up using was <a href="https://github.com/cloudnull/turbolift">Turbolift</a>.</p>
-
-  </article>
-
-  <article>
-  	<header>
-	  	<h1><a href="/2014/04/13/remove-part-of-url-htaccess.html">Removing part of the URL with .htaccess</a></h1>
-	  	<p><time datetime="2014-04-13">13 Apr 2014</time></p>
-  	</header>
-  	<p>Recently we changed URLs on a website from /p/<em>category</em>/<em>product</em> to just /<em>category</em>/*product. This meant that we had to 301 redirect the old URLs to prevent Google results from returning a 404 error and to also let Google know that the page has permanently changed URL as to update their search indexes.</p>
-
-  </article>
-
-  <article>
-  	<header>
-	  	<h1><a href="/2014/04/13/truncate-string-character-limiter.html">Truncate String (Character Limiter)</a></h1>
-	  	<p><time datetime="2014-04-13">13 Apr 2014</time></p>
-  	</header>
-  	<p>When displaying long pieces of user-definable text, it is sometimes useful to truncate it down into a smaller chunk for displaying in a fixed sized area.</p>
-
-  </article>
-
-  <article>
-  	<header>
-	  	<h1><a href="/2014/04/13/ignore-newrelic-page.html">Ignore New Relic Page Transaction</a></h1>
-	  	<p><time datetime="2014-04-13">13 Apr 2014</time></p>
-  	</header>
-  	<p>NewRelic will, by default, log every page request as a transaction. This can lead to skewed results on pages that have long running requests, such as crons.</p>
-
-  </article>
-
-  <article>
-  	<header>
-	  	<h1><a href="/2014/04/12/redirect-non-www-to-www.html">Redirect non-WWW to WWW</a></h1>
-	  	<p><time datetime="2014-04-12">12 Apr 2014</time></p>
-  	</header>
-  	<p>To redirect WWW to non-WWW simply put the following in your .htaccess file:</p>
-
-  </article>
-
-        </section>
-      </main>
-
-      <aside>
-        <a class="title" href="/">Thomas' Dev Corner</a>
-        <p>Just a small repository of development information and things I learn.</p>
-        <p><img src="http://www.gravatar.com/avatar/3e3b23365113d8ee51b22a9e236745b1?s=181" alt="Thomas Lomas" width="181" height="181" /></p>
-        <p><a href="https://twitter.com/tomtheplank" target="_blank" class="social-icon twitter">@tomtheplank on Twitter</a> <a href="https://github.com/ThomasLomas" target="_blank" class="social-icon github">ThomasLomas on Github</a> <a href="http://stackoverflow.com/users/823132/thomas-lomas" target="_blank" class="social-icon stackoverflow">Thomas Lomas on Stack Overflow</a></p>
-      </aside>
-    </div>
-
-    <script src="/javascript/prism.js"></script>
-    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-49969069-1', 'thomaslomas.me'); ga('send', 'pageview');</script>
-  </body>
-</html>
+<h2>Posts</h2>
+<ul>
+    {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </li>
+    {% endfor %}
+</ul>
