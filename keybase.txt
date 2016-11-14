@@ -1,0 +1,52 @@
+==================================================================
+https://keybase.io/tomlom
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.thomaslomas.me
+  * I am tomlom (https://keybase.io/tomlom) on keybase.
+  * I have a public key ASA2vgUjDaS_nYhzC24auHZY7ZZ_BeNhIp0ItBwrlixwmwo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "012036be05230da4bf9d88730b6e1ab87658ed967f05e361229d08b41c2b962c709b0a",
+            "host": "keybase.io",
+            "kid": "012036be05230da4bf9d88730b6e1ab87658ed967f05e361229d08b41c2b962c709b0a",
+            "uid": "7dccfa73864d73f5d605759f7059c719",
+            "username": "tomlom"
+        },
+        "service": {
+            "hostname": "www.thomaslomas.me",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.18"
+    },
+    "ctime": 1479139779,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1479139761,
+        "hash": "d0bcda21b44235e56dedceb6c4ffe0e5e58b42462e629e988f4f1605068a4efaeb0806dcad9f1f7f3e6c6deee5593d809dedd4315f2e8dda8f244aa47761f564",
+        "seqno": 713785
+    },
+    "prev": "c881c9a36ec85ff67b348b805c6d6b8ceefbcb15bbe6024f6b496e4aff9af110",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgNr4FIw2kv52IcwtuGrh2WO2WfwXjYSKdCLQcK5YscJsKp3BheWxvYWTFAvd7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMzZiZTA1MjMwZGE0YmY5ZDg4NzMwYjZlMWFiODc2NThlZDk2N2YwNWUzNjEyMjlkMDhiNDFjMmI5NjJjNzA5YjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMzZiZTA1MjMwZGE0YmY5ZDg4NzMwYjZlMWFiODc2NThlZDk2N2YwNWUzNjEyMjlkMDhiNDFjMmI5NjJjNzA5YjBhIiwidWlkIjoiN2RjY2ZhNzM4NjRkNzNmNWQ2MDU3NTlmNzA1OWM3MTkiLCJ1c2VybmFtZSI6InRvbWxvbSJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoid3d3LnRob21hc2xvbWFzLm1lIiwicHJvdG9jb2wiOiJodHRwOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4xOCJ9LCJjdGltZSI6MTQ3OTEzOTc3OSwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDc5MTM5NzYxLCJoYXNoIjoiZDBiY2RhMjFiNDQyMzVlNTZkZWRjZWI2YzRmZmUwZTVlNThiNDI0NjJlNjI5ZTk4OGY0ZjE2MDUwNjhhNGVmYWViMDgwNmRjYWQ5ZjFmN2YzZTZjNmRlZWU1NTkzZDgwOWRlZGQ0MzE1ZjJlOGRkYThmMjQ0YWE0Nzc2MWY1NjQiLCJzZXFubyI6NzEzNzg1fSwicHJldiI6ImM4ODFjOWEzNmVjODVmZjY3YjM0OGI4MDVjNmQ2YjhjZWVmYmNiMTViYmU2MDI0ZjZiNDk2ZTRhZmY5YWYxMTAiLCJzZXFubyI6OCwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEA/71Cr8vZRRzwNfwgzIBTSTomZQ+/bmVjVPx/JY+kGoB2aOaq6djgigcMYbs645jSwza0vGQ/9y8AbTBgcHAAJqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgNSNHWPQhMymuLrfh46js2QrHYTVBcyqMoWW3ZZM/3cWjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tomlom
