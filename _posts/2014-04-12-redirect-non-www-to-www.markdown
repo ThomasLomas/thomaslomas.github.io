@@ -9,6 +9,6 @@ To redirect WWW to non-WWW simply put the following in your .htaccess file:
 
 {% highlight http %}
 RewriteEngine On
-RewriteCond %{HTTP<em>HOST} !^www.
-RewriteRule ^(.*)$ http://www.%{HTTP</em>HOST}/$1 [R=301,L]
+RewriteCond %{HTTPHOST} !^www.
+RewriteRule ^(.*)$ http://www.%{HTTPHOST}/$1 [R=301,L]
 {% endhighlight %}
