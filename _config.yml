@@ -2,7 +2,7 @@
 title: "Thomas Lomas' Résumé / Curriculum Vitae / Ramblings"
 markdown: kramdown
 description: "This is my personal Résumé / Curriculum Vitae with some ramblings too"
-url: "http://thomaslomas.me"
+url: "http://thomaslomas.com"
 
 gems:
     - jekyll-feed
