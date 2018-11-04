@@ -4,12 +4,12 @@ markdown: kramdown
 description: "This is my personal Résumé / Curriculum Vitae with some ramblings too"
 url: "http://thomaslomas.com"
 
-gems:
-    - jekyll-feed
+plugins:
+  - jekyll-feed
 
 kramdown:
-    input: GFM
-    syntax_highlighter: rouge
+  input: GFM
+  syntax_highlighter: rouge
 
 exclude:
-    [vendor]
+  [vendor]
