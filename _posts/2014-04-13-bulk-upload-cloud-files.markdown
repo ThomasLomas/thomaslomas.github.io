@@ -3,9 +3,12 @@ layout: post
 title:  "Bulk uploading files to Rackspace Cloud Files"
 date:   2014-04-13 22:20:11 +0000
 categories: rackspace
+excerpt_separator: <!--more-->
 ---
 
 Recently I needed to upload around 28,000 images onto a cloud files container. This could be achieved by using CyberDuck, but that takes way too long to mass upload. What I ended up using was [Turbolift][turbolift].
+
+<!--more-->
 
 Turbolift is built for speed and masses of files. It can scan a local directory for all files and upload them all into a container.
 

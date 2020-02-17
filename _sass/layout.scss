@@ -7,8 +7,48 @@ html {
 }
 
 body {
-  margin: 1rem;
+  margin: 1rem auto;
   max-width: 51rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+p, h2, h3 {
+  margin: 1rem 0;
+  padding: 0;
+}
+
+h2 + p, h2 + h3, h3 + p {
+  margin-top: 0;
+}
+
+hr {
+  border: 0;
+  border-top: 2px solid #CCCCCC;
+  margin: 1rem 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+section ul {
+  margin-left: 0;
+  padding-left: 1.2rem;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header ul li+li {
+  margin-left: 1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {

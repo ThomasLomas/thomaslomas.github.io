@@ -3,9 +3,12 @@ layout: post
 title:  "Truncate String (Character Limiter)"
 date:   2014-04-13 22:20:11 +0000
 categories: php
+excerpt_separator: <!--more-->
 ---
 
 When displaying long pieces of user-definable text, it is sometimes useful to truncate it down into a smaller chunk for displaying in a fixed sized area.
+
+<!--more-->
 
 This can be achieved with the following function:
 
